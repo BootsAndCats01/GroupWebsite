@@ -7,6 +7,38 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <a class="navbar-brand text-light" href="#">Car Shop</a>
@@ -43,6 +75,29 @@
     </div>
 </nav>
 
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:40px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 <footer class="page-footer font-small bg-dark text-light">
 
     <div class="container-fluid text-center text-md-left">
@@ -51,8 +106,8 @@
 
             <div class="col-md-6 mt-md-0 mt-3">
 
-                <h5 class="text-uppercase">Footer Content</h5>
-                <p>Here you can use rows and columns to organize your footer content.</p>
+                <h5 class="text-uppercase">Awesome Section: </h5>
+                <p>Some other Awesome Car Companies we Like..</p>
 
             </div>
 
@@ -63,16 +118,16 @@
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!">Link 1</a>
+                        <a href="#!">https://www.audi.co.uk/</a>
                     </li>
                     <li>
-                        <a href="#!">Link 2</a>
+                        <a href="#!">https://www.bmw.co.uk/</a>
                     </li>
                     <li>
-                        <a href="#!">Link 3</a>
+                        <a href="#!">https://www.nissan.co.uk/</a>
                     </li>
                     <li>
-                        <a href="#!">Link 4</a>
+                        <a href="#!">https://www.ford.co.uk/</a>
                     </li>
                 </ul>
 
@@ -83,16 +138,16 @@
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!">Link 1</a>
+                        <a href="#!">https://www.landrover.co.uk</a>
                     </li>
                     <li>
-                        <a href="#!">Link 2</a>
+                        <a href="#!">https://www.lamborghini.com</a>
                     </li>
                     <li>
-                        <a href="#!">Link 3</a>
+                        <a href="#!">https://www.ferrari.com</a>
                     </li>
                     <li>
-                        <a href="#!">Link 4</a>
+                        <a href="#!">https://www.toyota.co.uk/</a>
                     </li>
                 </ul>
 
